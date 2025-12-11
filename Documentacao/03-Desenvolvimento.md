@@ -2,7 +2,7 @@
 # Materiais
 
 Os materiais utilizados no projeto foram:
-- Liste os materiais usados no projeto, como Arduino/ESP, sensores, atuadores e outros.
+- ESP32 DevKit, Servo de rotação contínua, LCD 16x2 com I2C, Sensor DHT11, Buzzer, Botão, LEDs (vermelho e verde) + resistores, Jumpers e protoboard.
 
 # Desenvolvimento
 
@@ -12,22 +12,24 @@ Descreva aqui como foi o desenvolvimento do trabalho, destacando cada uma das et
 
 ### Interface
 
-Descreva o desenvolvimento das telas do aplicativo.
+Interface BLE genérica (nRF Connect ou Serial Bluetooth Terminal). LCD alterna entre hora/data + T/UR e slots com quantidade.
 
 ### Código
 
-Descreva o desenvolvimento do código do aplicativo.
+BLE com Service UUID e duas características (RX Write, TX Notify). Comandos: nome;slot;HH:MM e QTD;slot;qtd. Respostas via Notify.
 
 ## Desenvolvimento do Hardware
 
 ### Montagem
 
-Descreva como foi o processo da montagem do projeto.
+Montagem conforme pinos definidos no código.
 
 ### Desenvolvimento do Código
 
-Descreva como foi o desenvolvimento do código do arduino/ESP.
+O desenvolvimento do código foi realizado passo a passo: primeiro criamos um código individual para cada componente do projeto e, em seguida, fizemos a integração de todos eles, realizando os ajustes necessários para que tudo funcionasse de forma unificada.
 
 ## Comunicação entre App e Hardware
+
+BLE GATT: app escreve na RX e recebe Notify na TX. Protocolo simples em texto.
 
 Descreva como foi o processo de comunicação entre App e arduino/ESP.
