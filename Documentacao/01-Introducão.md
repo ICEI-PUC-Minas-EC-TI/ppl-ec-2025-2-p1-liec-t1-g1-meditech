@@ -1,17 +1,11 @@
-# Introdução
+Introdução
+O projeto Dispensador de Remédios com ESP32 visa automatizar a liberação de medicamentos em horários pré-definidos, utilizando conectividade BLE para configuração remota, alertas visuais e sonoros, e exibição de informações em LCD. O contexto envolve a necessidade de melhorar a adesão terapêutica e reduzir erros na administração de medicamentos. O público-alvo inclui pacientes, cuidadores e clínicas que necessitam de uma solução simples e confiável.
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+Problema
+Muitos pacientes esquecem de tomar medicamentos nos horários corretos, o que compromete os tratamentos e ocasionando em situações complicadas. Em ambientes com múltiplos pacientes , a falta de controle aumenta os riscos ou pessoas que tomam remédios ou que tem problemas de esquecimento acabam não tomando os medicamentos. O problema é garantir alertas precisos, identificação do remédio e registro da retirada, sem depender de Wi-Fi e com interface simples.
 
-## Problema
+Objetivos
+Objetivo Geral: Desenvolver um dispositivo embarcado que avise, posicione e registre a retirada de medicamentos de forma segura e configurável via BLE. Objetivos Específicos: - Implementar mecanismo de posicionamento via servo para 7 slots. - Criar interface BLE para cadastrar horários e ajustar quantidades. - Exibir hora/data, temperatura/umidade e resumo dos slots no LCD. - Implementar alerta sonoro/visual e confirmação por botão.
 
-Nesse momento você deve apresentar o problema que o seu projeto deve  resolver. Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. 
-
-## Objetivos
-
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um projeto para solucionar o problema apresentado acima. 
-
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-## Público-Alvo
-
-Descreva quem serão as pessoas que usarão o projeto. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, etc.
+Público-Alvo
+O projeto é destinado a pessoas que necessitam seguir horários rigorosos de medicação, bem como cuidadores e clínicas que buscam maior controle na administração de medicamentos. O perfil dos usuários inclui indivíduos com pouca experiência tecnológica, garantindo acessibilidade por meio de uma interface simples e intuitiva. Tanto o aplicativo quanto o dispositivo foram projetados para serem fáceis de compreender e operar, mesmo por usuários sem conhecimentos avançados em tecnologia.
